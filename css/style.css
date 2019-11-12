@@ -8,7 +8,7 @@ body{font-family: 'Noto Sans KR', sans-serif;  color: #2b2b2b; text-align:center
 
 /* header */
 header{width:100%; box-shadow:3px 3px 3px rgba(0,0,0,0.1);}
-header>p{height:50px; line-height:50px; font-size:18px; color:#fff; letter-spacing:2px; background-image:url(../images/gradation_bg.jpg); background-size:cover;}
+header>p{width:100%; height:50px; line-height:50px; font-size:18px; font-weight:800; color:#fff; letter-spacing:2px; background-image:url(../images/gradation_bg.jpg); background-position:center center; background-size:cover;}
 
 /* section */
 section{width:1200px; margin:0 auto;}
@@ -31,13 +31,13 @@ section>.event-info>ol>li>.tag>li{float:left; margin-left:20px; line-height:63px
 section>.event-info>ol>li>.tag>li:first-child{margin-left:145px;}
 
 /* link */
-.link{width:100%; height:60px; background-image:url(../images/gradation_bg.jpg); background-size:cover;}
-.link>.title{display:block; height:60px; padding-top:3px; line-height:60px; font-size:36px; font-weight:normal; color:#fff; letter-spacing:2px;}
+.link{width:100%; height:60px; background-image:url(../images/gradation_bg.jpg); background-size:cover; background-position:center center;}
+.link>.title{display:block; width:100%; height:60px; padding-top:3px; line-height:60px; font-size:36px; font-weight:normal; color:#fff; letter-spacing:2px;}
 
 /* footer */
 footer{height:220px; color:#fff; background-color:#333;}
 footer>p{width:1200px; padding-top:23px; margin:0 auto; text-align:left; font-size:14px; line-height:1.7; letter-spacing: 1px;}
-footer>address{width:1200px; padding-top:23px; margin:0 auto; text-align:left;  font-size:14px;}
+footer>address{width:1200px; padding-top:23px; margin:0 auto; text-align:left; font-size:14px; letter-spacing:-1px;}
 
 
 /* sub - section game */
@@ -54,3 +54,35 @@ footer>address{width:1200px; padding-top:23px; margin:0 auto; text-align:left;  
 
 .game>.container>button{position:absolute; bottom:100px; left:20px; outline:none; border:none; background:none; width:143px; height:45px; font-size:25px; letter-spacing:2px; font-family:'Black Han Sans',sans-serif; font-weight:normal; color:#fff; background-image:url(../images/title_bg.png); background-size:cover; background-position:center 2px;}
 .game>.container>.score{position:absolute; bottom:100px; right:20px; display:block; font-size:34px; letter-spacing:2px; color:#fff; font-family:'Black Han Sans',sans-serif; font-weight:normal;}
+
+/* 미디어쿼리 구문 작성 기준 - 768px */
+@media screen and (max-width:768px){
+  /* header */
+  header>p{height:60px; line-height:60px; font-size:22px; letter-spacing:3px;}
+  
+  /* section */
+  section{width:100%; margin:0 auto;}
+  section>.event{background:url(../images/peach_bg_1.png) no-repeat 580px 90px, url(../images/peach_bg_2.png) no-repeat 40px 270px;}
+  section>.event>.title{font-size:100px;}
+  section>.event>.date{margin:-10px 0 0 345px; font-size:22px;}
+  section>.event>.date:after{margin-left:-345px;}
+  section>.event>p{font-size:20px; letter-spacing:-1px; line-height:1.9;}
+
+  section>.event-info{width:668px; margin:0 auto 200px;}
+  section>.event-info>ol>li>.title{width:186px; height:57px;margin:0 auto 10px; line-height:48px; font-size:25px; letter-spacing:1px; background-size:auto 57px; background-position:center center; background-repeat:no-repeat; background-image:url(../images/title_bg.png);}
+  section>.event-info>ol>li>.title>.num{font-size:30px;}
+  section>.event-info>ol>li>h3{font-size:45px;}
+  section>.event-info>ol>li>p{letter-spacing:-1px; line-height:1.9;}
+  section>.event-info>ol>li>.tag{width:568px; height:51px; margin:25px auto 0; background-position:left top; background-size:568px auto;}
+  section>.event-info>ol>li>.tag>li{float:left; margin-left:10px; line-height:41px; font-size:20px; letter-spacing:-1px;}
+  section>.event-info>ol>li>.tag>li:first-child{margin-left:55px;}
+
+  /* link */
+  .link{height:100px;}
+  .link>.title{height:100px; line-height:100px; font-size:40px; letter-spacing:3px;}
+
+  /* footer */
+  footer{height:260px; overflow:hidden;}
+  footer>p{width:100%; padding-top:25px; padding-left:30px; font-size:16px; line-height:1.9; letter-spacing:-1px;}
+  footer>address{width:100%; margin:0 auto; padding-top:25px; padding-left:30px; font-size:15px; letter-spacing:-1px;}
+}
