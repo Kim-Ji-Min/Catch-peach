@@ -74,8 +74,4 @@ $(function(){
   $peach.on('mouseover',function(){
     $(this).css('cursor','crosshair');
   });
-
-  $peach.on('mouseenter',function(){
-    $(this).css('cursor','crosshair');
-  });
 });//end of game
