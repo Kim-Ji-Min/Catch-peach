@@ -9,7 +9,7 @@ $(function(){
 
   //복숭아 랜덤 발생 함수
   function idx(){
-    nowIdx = 1+Math.floor(Math.random()*3);
+    nowIdx = 1+Math.floor(Math.random()*4);
   }
 
   function randomPeach(){
@@ -39,8 +39,9 @@ $(function(){
       },250);
 
     },intervalTime);
-  }//end of start
+  }
 
+  //스타트 이벤트
   $btn.on('click',function(){
     $peach.hide();
 
@@ -54,8 +55,9 @@ $(function(){
       $peach.hide();
       $comment.text('START버튼을 누르면 게임이 시작됩니다.');
     },15000); //15초간 게임 진행
-  });//end of btn click
+  });
 
+  //복숭아 클릭 이벤트
   $peach.on('click',function(){
     $comment.text('아야!! 왜 때려! 복숭아 살려 ㅠㅠㅠㅠㅠㅠ');
     $(this).children('img').attr('src','images/peach_shock_'+nowIdx+'.png');
@@ -63,7 +65,9 @@ $(function(){
     if(nowIdx==1){
       score += 100;
     }else if(nowIdx==2){
-      score += 300;
+      score += 200;
+    }else if(nowIdx==3){
+      score += 500;
     }else{
       score -= 100;
     }
@@ -74,4 +78,22 @@ $(function(){
   $peach.on('mouseover',function(){
     $(this).css('cursor','crosshair');
   });
-});//end of game
+
+  //미디어 쿼리 - 리사이징 후 1회만 경고창 발생
+  var num = 300;
+  var timer = null;
+
+  function resizeTxt( ) {
+    var winWidth = $('html,body').width();
+
+    if(winWidth<768){
+      alert('해당 이벤트 페이지는 PC와 태블릿에 최적화되었습니다.');
+    }
+  }
+
+  $(window).on('resize', function(){
+    clearTimeout(timer);
+    timer = setTimeout(resizeTxt, num);
+  });
+
+});
