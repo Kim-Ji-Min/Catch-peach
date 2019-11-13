@@ -22,13 +22,14 @@ section>.event-info{margin-bottom:200px; background-color: #fff; box-shadow:5px 
 section>.event-info>ol>li{padding-top:50px; margin-bottom:90px;}
 section>.event-info>ol>li:last-child{padding-bottom:90px;}
 section>.event-info>ol>li>.title{width:212px; height:67px; margin:0 auto 10px;  line-height:65px; font-size:27px; letter-spacing:2px; color:#fff; font-weight:normal; background-image:url(../images/title_bg.png); background-repeat:no-repeat;}
+section>.event-info>ol>li:last-child>.title{font-size:32px;}
 section>.event-info>ol>li>.title>.num{font-size:32px;}
 section>.event-info>ol>li>h3{margin-bottom:10px; font-family:'Black Han Sans',sans-serif; font-weight:normal; font-size:50px;}
 section>.event-info>ol>li>p{font-size:18px; letter-spacing:1px; line-height:1.6;}
 section>.event-info>ol>li>p>.notice{font-size:15px;}
 section>.event-info>ol>li>.tag{width:800px; height:73px; margin:25px auto 0; background-image:url(../images/tag_bg.png); background-position:center top; background-repeat:no-repeat; background-size:contain;}
 section>.event-info>ol>li>.tag>li{float:left; margin-left:20px; line-height:63px; font-size:20px; font-weight: 800; letter-spacing:1px;}
-section>.event-info>ol>li>.tag>li:first-child{margin-left:145px;}
+section>.event-info>ol>li>.tag>li:first-child{margin-left:110px;}
 
 /* link */
 .link{width:100%; height:60px; background-image:url(../images/gradation_bg.jpg); background-size:cover; background-position:center center;}
@@ -70,12 +71,13 @@ footer>address{width:1200px; padding-top:20px; margin:0 auto; text-align:left; f
 
   section>.event-info{width:90%; margin:0 auto 200px;}
   section>.event-info>ol>li>.title{width:186px; height:57px; margin:0 auto 10px; line-height:48px; font-size:25px; letter-spacing:1px; background-size:auto 57px; background-position:center center;}
+  section>.event-info>ol>li:last-child>.title{line-height:52px; font-size:29px;}
   section>.event-info>ol>li>.title>.num{font-size:30px;}
   section>.event-info>ol>li>h3{font-size:45px;}
   section>.event-info>ol>li>p{letter-spacing:-1px; line-height:1.9;}
   section>.event-info>ol>li>.tag{width:80%; height:51px; margin:25px auto 0; background-position:left top; background-size:568px auto;}
-  section>.event-info>ol>li>.tag>li{float:left; margin-left:10px; line-height:41px; font-size:20px; letter-spacing:-1px;}
-  section>.event-info>ol>li>.tag>li:first-child{margin-left:55px;}
+  section>.event-info>ol>li>.tag>li{float:left; margin-left:13px; line-height:41px; font-size:19px; letter-spacing:-1px;}
+  section>.event-info>ol>li>.tag>li:first-child{margin-left:26px;}
 
   /* link */
   .link{height:100px;}

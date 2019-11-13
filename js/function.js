@@ -79,21 +79,19 @@ $(function(){
     $(this).css('cursor','crosshair');
   });
 
-  //미디어 쿼리 - 리사이징 후 1회만 경고창 발생
-  var num = 300;
+  //미디어 쿼리 로직
   var timer = null;
 
-  function resizeTxt( ) {
+  function resizing(){
     var winWidth = $('html,body').width();
 
     if(winWidth<768){
-      alert('해당 이벤트 페이지는 PC와 태블릿에 최적화되었습니다.');
+      alert('해당 이벤트 페이지는 PC(1920px)와 태블릿(768px)에 최적화되었습니다.');
     }
   }
 
-  $(window).on('resize', function(){
+  $(window).one('resize', function(){
     clearTimeout(timer);
-    timer = setTimeout(resizeTxt, num);
+    timer = setTimeout(resizing,400);
   });
-
 });
